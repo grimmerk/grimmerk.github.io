@@ -30,7 +30,7 @@ function App() {
 
           {/* Social Links */}
           <div className="mt-8 flex justify-center md:justify-start space-x-6">
-            <a href="https://github.com/grimmer0125"
+            <a href="https://github.com/grimmerk"
               className="text-gray-600 hover:text-gray-900 flex items-center">
               <Github className="h-6 w-6" />
               <span className="ml-2">GitHub</span>
