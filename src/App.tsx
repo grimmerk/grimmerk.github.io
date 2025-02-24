@@ -35,7 +35,7 @@ function App() {
               <Github className="h-6 w-6" />
               <span className="ml-2">GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/tckang"
+            <a href="https://linkedin.com/in/grimmerk"
               className="text-gray-600 hover:text-gray-900 flex items-center">
               <Linkedin className="h-6 w-6" />
               <span className="ml-2">LinkedIn</span>
