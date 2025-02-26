@@ -54,7 +54,6 @@ function App() {
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured Work</h2>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-12">
-
           {/* VS Code Card */}
           <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col">
             <div className="relative bg-gray-900">
@@ -140,6 +139,48 @@ function App() {
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">C++</span>
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">JavaScript</span>
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Patents Section */}
+      <div className="max-w-6xl mx-auto pt-2 pb-12 px-4 sm:px-6 lg:px-8">
+       <h2 className="text-3xl font-bold text-gray-900 mb-8">Patent</h2>
+
+        <div className="bg-white rounded-lg shadow overflow-hidden">
+          <div className="md:flex">
+            <div className="md:w-1/3 bg-gray-50 p-6 flex flex-col justify-center items-center border-b md:border-b-0 md:border-r border-gray-200">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-20 w-20 text-blue-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+              </svg>
+              <div className="text-center">
+                <p className="text-sm font-medium text-gray-500">US Patent</p>
+                <p className="text-lg font-bold text-gray-800">US8493362</p>
+                <a href="https://patents.google.com/patent/US8493362" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm inline-flex items-center mt-2">
+                  <span>View on Google Patents</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div className="md:w-2/3 p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                Image-based coordinate input apparatus and method utilizing buffered images
+              </h3>
+              <p className="text-gray-600 mb-4">
+                This invention provides an image-based coordinate input apparatus and method for detecting positions of objects on a coordinate input region. The system captures and buffers successive images from multiple viewpoints to accurately calculate object positions, enabling more precise touch and gesture recognition in interactive displays.
+              </p>
+              <p className="text-sm text-gray-500 mb-4">
+                Filed: January 4, 2010 • Granted: July 23, 2013
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Computer Vision</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Touch Technology</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Interactive Displays</span>
               </div>
             </div>
           </div>
