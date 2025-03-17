@@ -73,7 +73,7 @@ function App() {
                 Creator of developer tools including VS Code, Chrome extensions, macOS utilities, and
                 an open-source pet healthcare tracking app (previously published on iOS/Android).
                 Author of TypeScript libraries for task queues and numerical computing.
-                Implemented AlphaGo Zero algorithm for tic-tac-toe in JavaScript,
+                Implemented AlphaGo Zero algorithm for tic-tac-toe in TypeScript,
                 demonstrating advanced AI concepts in browser environments.
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
@@ -100,14 +100,16 @@ function App() {
             </div>
             <div className="p-6 flex flex-col flex-grow justify-between">
               <p className="text-gray-600">
-                Speaker at PyCon APAC and COSCUP 2021, sharing expertise on Python in browsers for
-                medical imaging applications and TypeScript patterns for concurrent processing. Focused
-                on practical implementations and real-world applications.
+                Speaker at PyCon APAC, COSCUP 2021, and FOSSASIA Summit 2025, sharing expertise on Python in browsers for
+                medical imaging applications and TypeScript patterns for concurrent processing, and open source developer 
+                productivity tools. Focused on practical implementations and real-world applications.
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">PyCon APAC</span>
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">COSCUP</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">FOSSASIA</span>
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Medical Imaging</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Electron</span>
               </div>
             </div>
           </div>
