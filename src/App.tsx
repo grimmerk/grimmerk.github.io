@@ -55,8 +55,43 @@ function App() {
       <div className="max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured Work</h2>
 
+        {/* CodeV Card - Full Width */}
+        <div className="mb-12">
+          <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col md:flex-row">
+            <div className="relative bg-gray-900 md:w-1/2">
+              <img
+                src="assets/codev-preview.png"
+                alt="CodeV Quick Switcher"
+                className="w-full h-full object-contain"
+                style={{ maxHeight: '400px' }}
+              />
+            </div>
+            <div className="p-6 md:w-1/2 flex flex-col justify-center">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                CodeV
+              </h3>
+              <p className="text-gray-600 mb-4">
+                A macOS desktop app for quickly launching and switching VS Code/Cursor projects,
+                managing Claude Code sessions across iTerm2, Ghostty, and cmux terminals,
+                and an AI code assistant powered by Claude.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">TypeScript</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Electron</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Claude AI</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">macOS</span>
+              </div>
+              <div className="flex gap-4 text-sm">
+                <a href="https://github.com/grimmerk/codev" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>
+                <a href="https://apps.apple.com/us/app/switchv/id1663612397" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Mac App Store</a>
+                <a href="https://github.com/grimmerk/codev/releases/latest" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Latest Release</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid gap-8 md:grid-cols-2 md:gap-12">
-          {/* VS Code Card */}
+          {/* Developer Tools Card */}
           <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col">
             <div className="relative bg-gray-900">
               <img
