@@ -26,7 +26,8 @@ function App() {
           </p>
           <p className="text-gray-600 max-w-2xl mx-auto md:mx-0 leading-relaxed mt-3">
             <span className="font-semibold text-gray-700">Currently into:</span> LLM agent architecture, RAG systems, context engineering, MCP tooling
-            · Contributor to the <a href="https://github.com/modelcontextprotocol/typescript-sdk" className="text-blue-600 hover:text-blue-800">MCP TypeScript SDK</a>
+            · Contributor to the <a href="https://github.com/modelcontextprotocol/typescript-sdk" className="text-blue-600 hover:text-blue-800">MCP TypeScript SDK</a>{' '}
+            · Building open-source tools for Claude Code: <a href="https://memsaga.grimmer.io" className="text-blue-600 hover:text-blue-800">memsaga</a> and <a href="https://github.com/grimmerk/codev" className="text-blue-600 hover:text-blue-800">CodeV</a>
           </p>
 
 
@@ -54,6 +55,43 @@ function App() {
       {/* Featured Work */}
       <div className="max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured Work</h2>
+
+        {/* memsaga Card - Full Width */}
+        <div className="mb-12">
+          <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col md:flex-row">
+            <div className="relative bg-white md:w-1/2 flex items-center">
+              <img
+                src="assets/memsaga-preview.png"
+                alt="memsaga: Claude Code's memory and config kept as a git history you own"
+                className="w-full h-full object-contain"
+                style={{ maxHeight: '400px' }}
+              />
+            </div>
+            <div className="p-6 md:w-1/2 flex flex-col justify-center">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                memsaga
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Version control and two-way sync for Claude Code's memory, skills and config.
+                Every change becomes a commit named after the conversation that made it, in a git
+                repository you own; edits made on GitHub or another machine come back to the live files.
+                It also keeps companion docs: notes and translations that belong beside a repository
+                you can't commit to.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Rust</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Claude Code</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Git</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">macOS / Linux</span>
+              </div>
+              <div className="flex gap-4 text-sm">
+                <a href="https://memsaga.grimmer.io" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Website</a>
+                <a href="https://github.com/grimmerk/memsaga" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>
+                <a href="https://crates.io/crates/memsaga" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">crates.io</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* CodeV Card - Full Width */}
         <div className="mb-12">
