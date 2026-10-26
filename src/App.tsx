@@ -6,77 +6,72 @@ function App() {
       {/* Hero Section */}
       <div className="bg-white shadow-sm border-b">
         <div className="max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-            <div className="flex-1 text-center md:text-left mb-6 md:mb-0">
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">Grimmer Kang</h1>
-              <p className="text-xl text-gray-600 mb-2">Tech Lead at <a href="https://fireflies.ai" className="text-blue-600 hover:text-blue-800">Fireflies.ai</a></p>
-              <p className="text-base text-gray-500 mb-8">Building agentic AI systems and LLM architecture for meeting intelligence at scale</p>
-            </div>
-            <div className="flex-shrink-0 md:ml-8">
+          <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+            <div className="flex-shrink-0 order-first md:order-last md:ml-8">
               <img src="assets/profile.png" alt="Grimmer Kang"
                 className="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-lg object-cover"
               />
             </div>
-          </div>
-          <p className="text-gray-600 max-w-2xl mx-auto md:mx-0 leading-relaxed">
-            15+ years in software engineering, with a physics background (BS + MS). I've worked across AI, medical imaging,
-            astronomy (<a href="https://cartavis.org/" className="text-blue-600 hover:text-blue-800">CARTA</a>, an international C++/JS open-source project at Academia Sinica),
-            IoT, and streaming — primarily in TypeScript, Python, and C/C++.
-            Beyond code, I've built and led mobile and full-stack engineering teams and introduced Agile practices across organizations.
-          </p>
-          <p className="text-gray-600 max-w-2xl mx-auto md:mx-0 leading-relaxed mt-3">
-            <span className="font-semibold text-gray-700">Currently into:</span> LLM agent architecture, RAG systems, context engineering, MCP tooling
-            · Contributor to the <a href="https://github.com/modelcontextprotocol/typescript-sdk" className="text-blue-600 hover:text-blue-800">MCP TypeScript SDK</a>{' '}
-            · Building open-source tools for Claude Code: <a href="https://memsaga.grimmer.io" className="text-blue-600 hover:text-blue-800">memsaga</a> and <a href="https://github.com/grimmerk/codev" className="text-blue-600 hover:text-blue-800">CodeV</a>
-          </p>
+            <div className="flex-1 text-center md:text-left">
+              <h1 className="text-4xl font-bold text-gray-900 mb-4">Grimmer Kang</h1>
+              <p className="text-xl text-gray-600 mb-2">Tech Lead at <a href="https://fireflies.ai" className="text-blue-600 hover:text-blue-800">Fireflies.ai</a></p>
+              <p className="text-base text-gray-500 mb-6">Building agentic AI systems and LLM architecture for meeting intelligence at scale</p>
+              <p className="text-gray-600 max-w-2xl mx-auto md:mx-0 leading-relaxed">
+                15+ years in software engineering, with a physics background (BS + MS). I've worked across AI, medical imaging,
+                astronomy (<a href="https://cartavis.org/" className="text-blue-600 hover:text-blue-800">CARTA</a>, an international C++/JS open-source project at Academia Sinica),
+                IoT, and streaming — primarily in TypeScript, Python, and C/C++.
+                Beyond code, I've built and led mobile and full-stack engineering teams and introduced Agile practices across organizations.
+              </p>
+              <p className="text-gray-600 max-w-2xl mx-auto md:mx-0 leading-relaxed mt-3">
+                <span className="font-semibold text-gray-700">Currently into:</span> LLM agent architecture, RAG systems, context engineering, MCP tooling
+                · Contributor to the <a href="https://github.com/modelcontextprotocol/typescript-sdk" className="text-blue-600 hover:text-blue-800">MCP TypeScript SDK</a>{' '}
+                · Building open-source tools for Claude Code: <a href="https://memsaga.grimmer.io" className="text-blue-600 hover:text-blue-800">memsaga</a> and <a href="https://github.com/grimmerk/codev" className="text-blue-600 hover:text-blue-800">CodeV</a>
+              </p>
 
-
-          {/* Social Links */}
-          <div className="mt-8 flex justify-center md:justify-start space-x-6">
-            <a href="https://github.com/grimmerk"
-              className="text-gray-600 hover:text-gray-900 flex items-center">
-              <Github className="h-6 w-6" />
-              <span className="ml-2">GitHub</span>
-            </a>
-            <a href="https://linkedin.com/in/grimmerk"
-              className="text-gray-600 hover:text-gray-900 flex items-center">
-              <Linkedin className="h-6 w-6" />
-              <span className="ml-2">LinkedIn</span>
-            </a>
-            <a href="mailto:k@grimmer.io"
-              className="text-gray-600 hover:text-gray-900 flex items-center">
-              <Mail className="h-6 w-6" />
-              <span className="ml-2">k@grimmer.io</span>
-            </a>
+              {/* Social Links */}
+              <div className="mt-8 flex justify-center md:justify-start space-x-6">
+                <a href="https://github.com/grimmerk"
+                  className="text-gray-600 hover:text-gray-900 flex items-center">
+                  <Github className="h-6 w-6" />
+                  <span className="ml-2">GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/grimmerk"
+                  className="text-gray-600 hover:text-gray-900 flex items-center">
+                  <Linkedin className="h-6 w-6" />
+                  <span className="ml-2">LinkedIn</span>
+                </a>
+                <a href="mailto:k@grimmer.io"
+                  className="text-gray-600 hover:text-gray-900 flex items-center">
+                  <Mail className="h-6 w-6" />
+                  <span className="ml-2">k@grimmer.io</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Featured Work */}
-      <div className="max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured Work</h2>
-
-        {/* memsaga Card - Full Width */}
-        <div className="mb-12">
-          <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col md:flex-row">
-            <div className="relative bg-white md:w-1/2 flex items-center">
+      {/* Open-source tools for Claude Code */}
+      <div className="max-w-6xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Open-source tools for Claude Code</h2>
+        <div className="grid gap-8 md:grid-cols-2 md:gap-12">
+          {/* memsaga */}
+          <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+            <div className="relative aspect-video bg-white border-b border-gray-100">
               <img
                 src="assets/memsaga-preview.png"
                 alt="memsaga: Claude Code's memory and config kept as a git history you own"
-                className="w-full h-full object-contain"
-                style={{ maxHeight: '400px' }}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
-            <div className="p-6 md:w-1/2 flex flex-col justify-center">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                memsaga
-              </h3>
-              <p className="text-gray-600 mb-4">
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">memsaga</h3>
+              <p className="text-gray-600 mb-4 flex-grow">
                 Version control and two-way sync for Claude Code's memory, skills and config.
-                Every change becomes a commit named after the conversation that made it, in a git
-                repository you own; edits made on GitHub or another machine come back to the live files.
-                It also keeps companion docs: notes and translations that belong beside a repository
-                you can't commit to.
+                Every change is a commit named after the conversation that made it, in a git
+                repository you own, and edits made on GitHub or another machine come back.
+                It also keeps companion docs: notes and translations beside a repository you
+                can't commit to.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Rust</span>
@@ -84,136 +79,94 @@ function App() {
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Git</span>
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">macOS / Linux</span>
               </div>
-              <div className="flex gap-4 text-sm">
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
                 <a href="https://memsaga.grimmer.io" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Website</a>
                 <a href="https://github.com/grimmerk/memsaga" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>
                 <a href="https://crates.io/crates/memsaga" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">crates.io</a>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* CodeV Card - Full Width */}
-        <div className="mb-12">
-          <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col md:flex-row">
-            <div className="relative bg-gray-900 md:w-1/2">
+          {/* CodeV */}
+          <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+            <div className="relative aspect-video bg-gray-900">
               <img
-                src="assets/codev-preview.png"
-                alt="CodeV Quick Switcher"
-                className="w-full h-full object-contain"
-                style={{ maxHeight: '400px' }}
+                src="assets/codev-icon.png"
+                alt="CodeV app icon"
+                className="absolute inset-0 w-full h-full object-contain p-[12%]"
               />
             </div>
-            <div className="p-6 md:w-1/2 flex flex-col justify-center">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                CodeV
-              </h3>
-              <p className="text-gray-600 mb-4">
-                A macOS desktop app for quickly launching and switching VS Code/Cursor projects,
-                managing Claude Code sessions across iTerm2, Ghostty, and cmux terminals,
-                and an AI code assistant powered by Claude.
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">CodeV</h3>
+              <p className="text-gray-600 mb-4 flex-grow">
+                A macOS app for Claude Code sessions: list, search and resume every session, see
+                which ones are working, idle or waiting for you, and jump to the terminal each one
+                runs in (iTerm2, Terminal, Ghostty, cmux or VS Code). It also switches VS Code and
+                Cursor projects and has a built-in terminal.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">TypeScript</span>
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Electron</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Claude AI</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Claude Code</span>
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">macOS</span>
               </div>
-              <div className="flex gap-4 text-sm">
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
                 <a href="https://github.com/grimmerk/codev" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>
-                <a href="https://apps.apple.com/us/app/switchv/id1663612397" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Mac App Store</a>
-                <a href="https://github.com/grimmerk/codev/releases/latest" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Latest Release</a>
+                <a href="https://github.com/grimmerk/codev/releases/latest" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Download</a>
+                <a href="https://apps.apple.com/us/app/switchv/id1663612397" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Mac App Store <span className="text-gray-500">(without sessions)</span></a>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
+      {/* Earlier work */}
+      <div className="max-w-6xl mx-auto pt-8 pb-8 px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Earlier work</h2>
         <div className="grid gap-8 md:grid-cols-2 md:gap-12">
-          {/* Developer Tools Card */}
+          {/* Developer Tools */}
           <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col">
-            <div className="relative bg-gray-900">
+            <div className="relative aspect-video bg-gray-900">
               <img
                 src="assets/vscode-preview.png"
-                alt="VSCode Extension Preview"
-                className="w-full h-full object-contain"
+                alt="VS Code extension preview"
+                className="absolute inset-0 w-full h-full object-contain"
               />
-              <div className="absolute -bottom-1.5 left-0 right-0 p-4">
-                <h3 className="text-xl font-bold text-white">
-                  Developer Tools & Open Source
-                </h3>
-              </div>
             </div>
-            <div className="p-6 flex flex-col flex-grow justify-between">
-              <p className="text-gray-600">
-                Creator of <a href="https://github.com/grimmerk/codev" className="text-blue-600 hover:text-blue-800 font-medium">CodeV</a> — a macOS app for VS Code/Cursor project switching, Claude Code session management, and AI assistant.
-                Also built a <a href="https://marketplace.visualstudio.com/items?itemName=grimmer.vscode-back-forward-button" className="text-blue-600 hover:text-blue-800">VS Code extension</a> (78,000+ installs),
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Developer Tools & Open Source</h3>
+              <p className="text-gray-600 mb-4 flex-grow">
+                Built a <a href="https://marketplace.visualstudio.com/items?itemName=grimmer.vscode-back-forward-button" className="text-blue-600 hover:text-blue-800">VS Code extension</a> (78,000+ installs),
                 Chrome extensions, TypeScript libraries (<a href="https://www.npmjs.com/package/d4c-queue" className="text-blue-600 hover:text-blue-800">d4c-queue</a> 15K+, <a href="https://www.npmjs.com/package/@d4c/numjs" className="text-blue-600 hover:text-blue-800">@d4c/numjs</a> 20K+ downloads),
                 and a <a href="https://chrome.google.com/webstore/detail/dicom-image-viewer/ehppmcooahfnlfhhcflpkcjmonkoindc" className="text-blue-600 hover:text-blue-800">Medical DICOM Viewer</a> (3,000+ users).
               </p>
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">TypeScript</span>
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Python</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Electron</span>
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">VS Code</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Claude AI</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Chrome Extensions</span>
               </div>
             </div>
           </div>
 
-          {/* Conference Speaking Card */}
+          {/* CARTA */}
           <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col">
-            <div className="relative h-[451px] md:h-[451px] bg-gray-900">
-              <img
-                src="assets/pycon-outline.png"
-                alt="Conference Speaking"
-                className="w-full h-full object-contain"
-              />
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <h3 className="text-xl font-bold text-white">
-                  Technical Speaking
-                </h3>
-              </div>
-            </div>
-            <div className="p-6 flex flex-col flex-grow justify-between">
-              <p className="text-gray-600">
-                Speaker at FOSSASIA Summit 2025 (Bangkok), PyCon APAC 2021 (Thailand), PyConTW 2021, and COSCUP 2021.
-                Topics include open-source developer productivity tools, Python in browsers for medical imaging (Pyodide/WebAssembly),
-                and TypeScript patterns for concurrent processing.
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">FOSSASIA 2025</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">PyCon APAC</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">PyConTW</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">COSCUP</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* CARTA Section */}
-        <div className="mt-12">
-          <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col">
-            <div className="relative bg-gray-900">
+            <div className="relative aspect-video bg-gray-900">
               <img
                 src="assets/carta-preview.png"
-                alt="CARTA Visualization"
-                className="w-full object-contain"
-                style={{ height: '490px' }}
+                alt="CARTA visualization"
+                className="absolute inset-0 w-full h-full object-contain"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                <h3 className="text-xl font-bold text-white">
-                  Astronomy Software Development
-                </h3>
-              </div>
             </div>
-            <div className="p-6 flex flex-col flex-grow justify-between">
-              <p className="text-gray-600">
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Astronomy Software Development</h3>
+              <p className="text-gray-600 mb-4 flex-grow">
                 Led development of <a href="https://cartavis.org/" className="text-blue-600 hover:text-blue-800">CARTA</a> (Cube Analysis and Rendering Tool for Astronomy) at Academia Sinica,
                 an international C++/JS open-source project collaborating with US (NRAO), Canada, and South Africa teams.
                 Built a full-stack + algorithm team, designed the live collaborative share-screen architecture,
                 and resolved critical issues through close collaboration with astronomers.
               </p>
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">C++</span>
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">JavaScript</span>
                 <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Python</span>
@@ -224,9 +177,20 @@ function App() {
       </div>
 
       {/* Talks Section */}
-      <div className="max-w-6xl mx-auto pt-2 pb-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto pt-8 pb-8 px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Talks</h2>
-        <div className="bg-white rounded-lg shadow divide-y">
+        <div className="grid gap-8 md:grid-cols-5 items-start">
+        <figure className="md:col-span-2">
+          <div className="bg-gray-900 rounded-lg shadow overflow-hidden">
+            <img
+              src="assets/pycon-outline.png"
+              alt="Talk slide: Use Pyodide to run Python in browsers, at PyCon APAC 2021"
+              className="w-full h-auto"
+            />
+          </div>
+          <figcaption className="text-sm text-gray-500 mt-2">PyCon APAC 2021, Thailand</figcaption>
+        </figure>
+        <div className="md:col-span-3 bg-white rounded-lg shadow divide-y">
           <div className="p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
             <div>
               <h3 className="font-semibold text-gray-900">FOSSASIA Summit 2025 <span className="text-gray-500 font-normal">— Bangkok</span></h3>
@@ -264,6 +228,7 @@ function App() {
               <a href="https://www.youtube.com/watch?v=_wxSAEts35w" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">video</a>
             </div>
           </div>
+        </div>
         </div>
       </div>
 
