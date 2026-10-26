@@ -196,7 +196,10 @@ function App() {
               <h3 className="font-semibold text-gray-900">FOSSASIA Summit 2025 <span className="text-gray-500 font-normal">— Bangkok</span></h3>
               <p className="text-gray-600 text-sm mt-1">CodeV: Streamlining Developer Workflow with an Open Source VS Code Launcher</p>
             </div>
-            <a href="https://slides.com/grimmer/fossasia-2025-switchv-streamlining-developer-workflow-with-an-open-source-vs-code-launcher" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm whitespace-nowrap">slide</a>
+            <div className="flex gap-3 text-sm">
+              <a href="https://slides.com/grimmer/fossasia-2025-switchv-streamlining-developer-workflow-with-an-open-source-vs-code-launcher" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">slide</a>
+              <a href="https://www.youtube.com/watch?v=o5Y29yEV6BA" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">video</a>
+            </div>
           </div>
           <div className="p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
             <div>
