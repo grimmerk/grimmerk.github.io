@@ -25,7 +25,7 @@ function App() {
               <p className="text-gray-600 max-w-2xl mx-auto md:mx-0 leading-relaxed mt-3">
                 <span className="font-semibold text-gray-700">Currently into:</span> LLM agent architecture, RAG systems, context engineering, MCP tooling
                 · Contributor to the <a href="https://github.com/modelcontextprotocol/typescript-sdk" className="text-blue-600 hover:text-blue-800">MCP TypeScript SDK</a>{' '}
-                · Building open-source tools for Claude Code: <a href="https://memsaga.grimmer.io" className="text-blue-600 hover:text-blue-800">memsaga</a> and <a href="https://github.com/grimmerk/codev" className="text-blue-600 hover:text-blue-800">CodeV</a>
+                · Building open-source developer tools: <a href="https://memsaga.grimmer.io" className="text-blue-600 hover:text-blue-800">memsaga</a> and <a href="https://github.com/grimmerk/codev" className="text-blue-600 hover:text-blue-800">CodeV</a> for Claude Code, and <a href="https://github.com/grimmerk/matchapack" className="text-blue-600 hover:text-blue-800">matchapack</a> for npm and Yarn worktrees
               </p>
 
               {/* Social Links */}
@@ -51,9 +51,9 @@ function App() {
         </div>
       </div>
 
-      {/* Open-source tools for Claude Code */}
+      {/* Open-source developer tools */}
       <div className="max-w-6xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Open-source tools for Claude Code</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Open-source developer tools</h2>
         <div className="grid gap-8 md:grid-cols-2 md:gap-12">
           {/* memsaga */}
           <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col">
@@ -68,8 +68,8 @@ function App() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">memsaga</h3>
               <p className="text-gray-600 mb-4 flex-grow">
                 Version control and two-way sync for Claude Code's memory, skills and config.
-                Every change is a commit named after the conversation that made it, in a git
-                repository you own, and edits made on GitHub or another machine come back.
+                Every change is a commit named after the Claude Code session it came from, in a
+                git repository you own, and edits made on GitHub or another machine come back.
                 It also keeps companion docs: notes and translations beside a repository you
                 can't commit to.
               </p>
@@ -83,6 +83,39 @@ function App() {
                 <a href="https://memsaga.grimmer.io" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Website</a>
                 <a href="https://github.com/grimmerk/memsaga" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>
                 <a href="https://crates.io/crates/memsaga" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">crates.io</a>
+              </div>
+            </div>
+          </div>
+
+          {/* matchapack */}
+          <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+            <div className="relative aspect-video bg-white border-b border-gray-100">
+              <img
+                src="assets/matchapack-preview.png"
+                alt="matchapack: a large three-layer matcha cake for the shared store, with two small blocks cloned from it for two worktrees of one project"
+                className="absolute inset-0 w-full h-full object-contain"
+              />
+            </div>
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">matchapack</h3>
+              <p className="text-gray-600 mb-4 flex-grow">
+                Saves disk space when you keep several checkouts of a JavaScript project, such as
+                one git worktree per branch or per AI coding agent. <code>npm ci</code>,{' '}
+                <code>npm install</code> and Yarn 1 place each package as a copy-on-write clone of
+                one shared copy: ten worktrees take about the disk space of one, and every{' '}
+                <code>node_modules</code> is the one plain npm or Yarn would build. Nothing in the
+                project changes.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Rust</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">npm / Yarn 1</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Copy-on-write</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">macOS / Linux</span>
+              </div>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+                <a href="https://github.com/grimmerk/matchapack" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>
+                <a href="https://github.com/grimmerk/matchapack#install" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Install</a>
+                <a href="https://crates.io/crates/matchapack" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">crates.io</a>
               </div>
             </div>
           </div>
