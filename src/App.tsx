@@ -87,37 +87,6 @@ function App() {
             </div>
           </div>
 
-          {/* CodeV */}
-          <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col">
-            <div className="relative aspect-video bg-gray-900">
-              <img
-                src="assets/codev-icon.png"
-                alt="CodeV app icon"
-                className="absolute inset-0 w-full h-full object-contain p-[12%]"
-              />
-            </div>
-            <div className="p-6 flex flex-col flex-grow">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">CodeV</h3>
-              <p className="text-gray-600 mb-4 flex-grow">
-                A macOS app for Claude Code sessions: list, search and resume every session, see
-                which ones are working, idle or waiting for you, and jump to the terminal each one
-                runs in (iTerm2, Terminal, Ghostty, cmux or VS Code). It also switches VS Code and
-                Cursor projects and has a built-in terminal.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">TypeScript</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Electron</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Claude Code</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">macOS</span>
-              </div>
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
-                <a href="https://github.com/grimmerk/codev" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>
-                <a href="https://github.com/grimmerk/codev/releases/latest" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Download</a>
-                <a href="https://apps.apple.com/us/app/switchv/id1663612397" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Mac App Store <span className="text-gray-500">(without sessions)</span></a>
-              </div>
-            </div>
-          </div>
-
           {/* matchapack */}
           <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col">
             <div className="relative aspect-video bg-white border-b border-gray-100">
@@ -147,6 +116,37 @@ function App() {
                 <a href="https://github.com/grimmerk/matchapack" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>
                 <a href="https://github.com/grimmerk/matchapack#install" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Install</a>
                 <a href="https://crates.io/crates/matchapack" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">crates.io</a>
+              </div>
+            </div>
+          </div>
+
+          {/* CodeV */}
+          <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+            <div className="relative aspect-video bg-gray-900">
+              <img
+                src="assets/codev-icon.png"
+                alt="CodeV app icon"
+                className="absolute inset-0 w-full h-full object-contain p-[12%]"
+              />
+            </div>
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">CodeV</h3>
+              <p className="text-gray-600 mb-4 flex-grow">
+                A macOS app for Claude Code sessions: list, search and resume every session, see
+                which ones are working, idle or waiting for you, and jump to the terminal each one
+                runs in (iTerm2, Terminal, Ghostty, cmux or VS Code). It also switches VS Code and
+                Cursor projects and has a built-in terminal.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">TypeScript</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Electron</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Claude Code</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">macOS</span>
+              </div>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+                <a href="https://github.com/grimmerk/codev" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>
+                <a href="https://github.com/grimmerk/codev/releases/latest" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Download</a>
+                <a href="https://apps.apple.com/us/app/switchv/id1663612397" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Mac App Store <span className="text-gray-500">(without sessions)</span></a>
               </div>
             </div>
           </div>
